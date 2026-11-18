@@ -1,9 +1,9 @@
-// Paste your Firebase config from Firebase Console -> Project Settings -> Your apps (Web app)
+// Firebase configuration for sourav-portfolio-fc5c0
 window.FIREBASE_CONFIG = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_PROJECT_ID.firebaseapp.com',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_PROJECT_ID.appspot.com',
-  messagingSenderId: 'YOUR_SENDER_ID',
-  appId: 'YOUR_APP_ID'
+  apiKey: 'AIzaSyCDubDfJS9U8qM01kqqzf0zPUmlTsM8_2w',
+  authDomain: 'sourav-portfolio-fc5c0.firebaseapp.com',
+  projectId: 'sourav-portfolio-fc5c0',
+  storageBucket: 'sourav-portfolio-fc5c0.firebasestorage.app',
+  messagingSenderId: '196973939530',
+  appId: '1:196973939530:web:44a440e1816f9d73830fb3'
 };
