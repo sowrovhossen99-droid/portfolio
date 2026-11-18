@@ -19,16 +19,25 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      <div class="nav-actions">
+        <button class="search-toggle" id="searchToggle" aria-label="Search portfolio">🔍</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+    <div class="search-bar-wrap" id="searchBarWrap">
+      <div class="container">
+        <input type="search" id="portfolioSearch" class="search-input" placeholder="Search skills, projects, bio, contact..." aria-label="Search portfolio" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
     </div>
   </header>
 
   <main>
     <section id="home" class="hero">
       <div class="container hero-content">
-        <span class="badge">Available for Work</span>
-        <h1>Hi, I'm <span class="gradient-text">Md. Mostafizur Rahman Sourav</span>.<br />I build clean &amp; modern web experiences.</h1>
-        <p class="hero-sub">
+        <span class="badge" id="heroBadge">Available for Work</span>
+        <h1>Hi, I'm <span class="gradient-text" id="heroName">Md. Mostafizur Rahman Sourav</span>.<br />I build clean &amp; modern web experiences.</h1>
+        <p class="hero-sub" id="heroSub">
           A student at Daffodil International University and a passionate web developer focused on crafting fast, responsive, and user-friendly websites.
         </p>
         <div class="hero-actions">
@@ -42,7 +51,7 @@
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="about-card">
-          <p>
+          <p id="aboutText">
             I'm <strong>Md. Mostafizur Rahman Sourav</strong>, currently studying at <strong>Daffodil International University</strong>. I love turning ideas into real, interactive products on the web, focusing on clean code, thoughtful UI design, and smooth user experiences across desktop and mobile devices.
           </p>
           <div class="stats">
@@ -86,7 +95,7 @@
     <section id="projects" class="section">
       <div class="container">
         <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
+        <div class="projects-grid" id="projectsGrid">
           <article class="project-card">
             <div class="project-tag">Web App</div>
             <h3>Task Tracker</h3>
@@ -122,9 +131,9 @@
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-wrapper">
           <p style="margin-bottom: 1.25rem; color: var(--muted);">
-            Direct Email: <a href="mailto:sowrovhossen8589@gmail.com" style="color: var(--accent-2); text-decoration: none;">sowrovhossen8589@gmail.com</a><br />
-            WhatsApp: <a href="https://wa.me/8801755101237" target="_blank" rel="noopener noreferrer" style="color: #4ade80; text-decoration: none;">+880 1755-101237</a><br />
-            Messenger: <a href="https://m.me/souravhossen99" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: none;">m.me/souravhossen99</a>
+            Direct Email: <a id="directEmail" href="mailto:sowrovhossen8589@gmail.com" style="color: var(--accent-2); text-decoration: none;">sowrovhossen8589@gmail.com</a><br />
+            WhatsApp: <a id="directWhatsapp" href="https://wa.me/8801755101237" target="_blank" rel="noopener noreferrer" style="color: #4ade80; text-decoration: none;">+880 1755-101237</a><br />
+            Messenger: <a id="directMessenger" href="https://m.me/souravhossen99" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: none;">m.me/souravhossen99</a>
           </p>
           <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="28014c1f-c4da-42b6-ab9e-ca66b015c123" />
@@ -144,7 +153,7 @@
             <div class="form-actions">
               <button type="submit" class="btn btn-primary">Send Message</button>
               <button type="button" id="whatsappBtn" class="btn btn-whatsapp">Send via WhatsApp</button>
-              <a href="https://m.me/souravhossen99" target="_blank" rel="noopener noreferrer" class="btn btn-messenger">Message on Messenger</a>
+              <a id="messengerBtn" href="https://m.me/souravhossen99" target="_blank" rel="noopener noreferrer" class="btn btn-messenger">Message on Messenger</a>
             </div>
             <p id="formStatus" class="form-status" aria-live="polite"></p>
           </form>
@@ -153,16 +162,24 @@
     </section>
   </main>
 
-  <a href="https://wa.me/8801755101237" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    💬 WhatsApp
-  </a>
+  <div class="floating-chat">
+    <a id="floatWhatsapp" href="https://wa.me/8801755101237" target="_blank" rel="noopener noreferrer" class="float-btn whatsapp-float" aria-label="Chat on WhatsApp">
+      💬 WhatsApp
+    </a>
+    <a id="floatMessenger" href="https://m.me/souravhossen99" target="_blank" rel="noopener noreferrer" class="float-btn messenger-float" aria-label="Chat on Messenger">
+      💬 Messenger
+    </a>
+  </div>
 
   <footer class="footer">
     <div class="container">
-      <p>© 2026 Md. Mostafizur Rahman Sourav. Built with HTML, CSS &amp; JavaScript.</p>
+      <p>© 2026 Md. Mostafizur Rahman <span id="secretAdminTrigger" style="color: inherit; cursor: inherit;">Sourav</span>. Built with HTML, CSS &amp; JavaScript.</p>
     </div>
   </footer>
 
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
