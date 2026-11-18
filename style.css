@@ -319,6 +319,11 @@ h1, h2, h3, .logo {
   color: #fff;
 }
 
+.btn-messenger {
+  background: #0084ff;
+  color: #fff;
+}
+
 .whatsapp-float {
   position: fixed;
   right: 24px;
