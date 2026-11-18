@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Mostafizur Rahman Sourav — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Sourav<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <span class="badge">Available for Work</span>
+        <h1>Hi, I'm <span class="gradient-text">Md. Mostafizur Rahman Sourav</span>.<br />I build clean &amp; modern web experiences.</h1>
+        <p class="hero-sub">
+          A student at Daffodil International University and a passionate web developer focused on crafting fast, responsive, and user-friendly websites.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-card">
+          <p>
+            I'm <strong>Md. Mostafizur Rahman Sourav</strong>, currently studying at <strong>Daffodil International University</strong>. I love turning ideas into real, interactive products on the web, focusing on clean code, thoughtful UI design, and smooth user experiences across desktop and mobile devices.
+          </p>
+          <div class="stats">
+            <div class="stat-item">
+              <h3>10+</h3>
+              <p>Projects Built</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Responsive Design</p>
+            </div>
+            <div class="stat-item">
+              <h3>24/7</h3>
+              <p>Always Learning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, JavaScript (ES6+), Responsive Design</p>
+          </div>
+          <div class="skill-card">
+            <h3>UI &amp; Styling</h3>
+            <p>Flexbox, CSS Grid, Modern Animations, Clean Typography</p>
+          </div>
+          <div class="skill-card">
+            <h3>Tools &amp; Workflow</h3>
+            <p>Git, GitHub, VS Code, Chrome DevTools</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-tag">Web App</div>
+            <h3>Task Tracker</h3>
+            <p>A clean daily productivity app with local storage persistence, task filtering, and dark mode.</p>
+            <div class="project-links">
+              <a href="#contact" class="link-arrow">Live Demo →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Landing Page</div>
+            <h3>Modern SaaS UI</h3>
+            <p>A high-converting responsive landing page built with CSS Grid, smooth transitions, and accessible markup.</p>
+            <div class="project-links">
+              <a href="#contact" class="link-arrow">Live Demo →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Portfolio</div>
+            <h3>Personal Website</h3>
+            <p>A fast static portfolio template ready to deploy for free on GitHub Pages, Netlify, or Vercel.</p>
+            <div class="project-links">
+              <a href="#contact" class="link-arrow">Live Demo →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+          <p style="margin-bottom: 1.25rem; color: var(--muted);">
+            Direct Email: <a href="mailto:sowrovhossen8589@gmail.com" style="color: var(--accent-2); text-decoration: none;">sowrovhossen8589@gmail.com</a><br />
+            WhatsApp: <a href="https://wa.me/8801755101237" target="_blank" rel="noopener noreferrer" style="color: #4ade80; text-decoration: none;">+880 1755-101237</a>
+          </p>
+          <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="28014c1f-c4da-42b6-ab9e-ca66b015c123" />
+            <input type="hidden" name="subject" value="New Portfolio Contact Message" />
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="button" id="whatsappBtn" class="btn btn-whatsapp">Send via WhatsApp</button>
+            </div>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href="https://wa.me/8801755101237" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    💬 WhatsApp
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Md. Mostafizur Rahman Sourav. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
